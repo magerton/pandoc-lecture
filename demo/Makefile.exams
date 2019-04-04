@@ -7,12 +7,12 @@
 ## Path to this repository (to be used as git sub-module)
 
 PWD          = $(shell pwd)
-DATADIR      = ..
+DATADIR      = 
 FILTERDIR    = $(DATADIR)/filters
 RESOURCEDIR  = $(DATADIR)/resources
 RESOURCEPATH = .:./figs:$(DATADIR)
 
-PANDOC      ?= docker run --rm -v $(PWD):/pandoc -v $(PWD)/$(FILTERDIR):/filters -v $(PWD)/$(RESOURCEDIR):/resources debian-texlive pandoc
+PANDOC      ?= pandoc
 
 
 
